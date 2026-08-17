@@ -25,6 +25,32 @@ else:
 def normalize(text):
     return re.sub(r"[^a-z0-9+ ]+", " ", (text or "").lower()).strip()
 
+def get_shortcuts(item):
+    shortcuts = []
+    for s in item.get("shortcuts", []) if isinstance(item.get("shortcuts"), list) else []:
+        if isinstance(s, str) and s.strip():
+            shortcuts.append(s.strip())
+    shortcut = item.get("shortcut")
+    if isinstance(shortcut, str) and shortcut.strip():
+        shortcuts.append(shortcut.strip())
+    seen = set()
+    unique = []
+    for s in shortcuts:
+        key = s.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        unique.append(s)
+    return unique
+
+def export_item(item):
+    out = dict(item)
+    shortcuts = get_shortcuts(item)
+    if shortcuts:
+        out["shortcuts"] = shortcuts
+        out["shortcut"] = shortcuts[0]
+    return out
+
 # Scoring/search function
 def score_commands(commands, query, product_filter, kind_filter):
     q = normalize(query)
@@ -35,7 +61,8 @@ def score_commands(commands, query, product_filter, kind_filter):
             continue
         if kind_filter != "all" and item.get("kind") != kind_filter:
             continue
-        hay = normalize(" ".join([str(item.get(k, "")) for k in ("name", "shortcut", "description")] + item.get("tasks", [])))
+        shortcuts_text = " ".join(get_shortcuts(item))
+        hay = normalize(" ".join([str(item.get(k, "")) for k in ("name", "description")] + [shortcuts_text] + item.get("tasks", [])))
         score = 0 if q else 1
         if q and q in hay:
             score += 8
@@ -47,7 +74,7 @@ def score_commands(commands, query, product_filter, kind_filter):
     return matches
 
 # UI
-st.title("Civil 3D + AutoCAD 2026 Command Search")
+st.title("Civil 3D + AutoCAD Command Search")
 st.write("Ask for a task and find the matching command or shortcut.")
 
 # Controls
@@ -77,7 +104,7 @@ st.markdown(f"**{len(matches)} result(s)** from **{len(commands)}** indexed entr
 
 # Download and copy controls (all results)
 if matches:
-    results_data = [m["item"] for m in matches]
+    results_data = [export_item(m["item"]) for m in matches]
     json_bytes = json.dumps(results_data, indent=2).encode("utf-8")
 
     csv_columns = ["product", "kind", "name", "shortcut", "description"]
@@ -122,7 +149,8 @@ for m in matches:
     name = html_lib.escape(item.get("name", ""))
     product = html_lib.escape(item.get("product", ""))
     kind = html_lib.escape(item.get("kind", ""))
-    shortcut = html_lib.escape(item.get("shortcut", ""))
+    shortcuts_display = " / ".join(get_shortcuts(item)) or item.get("shortcut", "")
+    shortcut = html_lib.escape(shortcuts_display)
     description = html_lib.escape(item.get("description", ""))
     tasks = html_lib.escape(", ".join(item.get("tasks", [])))
 
@@ -161,7 +189,7 @@ for m in matches:
     </script>
     """
 
-    item_json = json.dumps(item).replace("</", "<\\/")
+    item_json = json.dumps(export_item(item)).replace("</", "<\\/")
     raw_json = item_json
     dl_name = f"{item.get('name','result')}.json".replace(' ', '_')
 

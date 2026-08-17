@@ -1,72 +1,1999 @@
 [
-  {"product": "AutoCAD 2026", "kind": "command", "name": "LINE", "shortcut": "L", "description": "Create straight line segments.", "tasks": ["draw a line", "start drafting geometry"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "PLINE", "shortcut": "PL", "description": "Create connected polyline segments.", "tasks": ["draw connected lines", "create boundary polyline"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "CIRCLE", "shortcut": "C", "description": "Create circles by center/radius options.", "tasks": ["draw a circle", "add round geometry"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "ARC", "shortcut": "A", "description": "Create arc geometry.", "tasks": ["draw an arc", "add curved segment"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "RECTANG", "shortcut": "REC", "description": "Create rectangles.", "tasks": ["draw a rectangle", "make a box outline"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "OFFSET", "shortcut": "O", "description": "Create parallel/concentric copies.", "tasks": ["offset a line", "create parallel boundary"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "TRIM", "shortcut": "TR", "description": "Trim objects to edges.", "tasks": ["trim excess lines", "clean intersections"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "EXTEND", "shortcut": "EX", "description": "Extend objects to boundaries.", "tasks": ["extend a line", "close gaps"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "FILLET", "shortcut": "F", "description": "Round corners between objects.", "tasks": ["round corner", "create tangent arc"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "CHAMFER", "shortcut": "CHA", "description": "Bevel corners.", "tasks": ["bevel corner", "cut corner at distance"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "MOVE", "shortcut": "M", "description": "Move selected objects.", "tasks": ["move an object", "relocate geometry"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "COPY", "shortcut": "CO", "description": "Copy selected objects.", "tasks": ["duplicate geometry", "copy elements"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "ROTATE", "shortcut": "RO", "description": "Rotate selected objects.", "tasks": ["rotate object", "turn block"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "SCALE", "shortcut": "SC", "description": "Scale objects.", "tasks": ["resize geometry", "scale block"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "MIRROR", "shortcut": "MI", "description": "Mirror objects across an axis.", "tasks": ["mirror geometry", "symmetrical copy"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "ARRAY", "shortcut": "AR", "description": "Create rectangular/polar/path arrays.", "tasks": ["repeat object pattern", "array objects"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "HATCH", "shortcut": "H", "description": "Fill enclosed areas with hatch/solid.", "tasks": ["hatch area", "fill closed boundary"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "DIM", "shortcut": "D", "description": "Create and edit dimensions.", "tasks": ["add dimensions", "dimension drawing"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "MTEXT", "shortcut": "MT", "description": "Create multiline text.", "tasks": ["add note", "insert text annotation"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "BLOCK", "shortcut": "B", "description": "Define a block.", "tasks": ["create reusable block", "make symbol block"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "INSERT", "shortcut": "I", "description": "Insert a block reference.", "tasks": ["insert block", "place symbol"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "XREF", "shortcut": "XR", "description": "Attach and manage external references.", "tasks": ["attach xref", "reference another drawing"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "LAYER", "shortcut": "LA", "description": "Layer Properties Manager.", "tasks": ["manage layers", "change layer settings"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "MATCHPROP", "shortcut": "MA", "description": "Copy object properties.", "tasks": ["match properties", "copy style"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "PROPERTIES", "shortcut": "PR", "description": "Open Properties palette.", "tasks": ["edit object properties", "inspect object settings"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "ZOOM", "shortcut": "Z", "description": "Change view magnification.", "tasks": ["zoom extents", "zoom to objects"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "PAN", "shortcut": "P", "description": "Pan viewport.", "tasks": ["move view", "pan drawing"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "UNDO", "shortcut": "U", "description": "Undo previous action.", "tasks": ["undo change", "revert last step"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "REDO", "shortcut": "REDO", "description": "Redo undone action.", "tasks": ["redo change", "restore step"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "PURGE", "shortcut": "PU", "description": "Remove unused named objects.", "tasks": ["clean drawing", "remove unused blocks and layers"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "AUDIT", "shortcut": "AUDIT", "description": "Check and repair drawing errors.", "tasks": ["fix drawing errors", "audit file"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "PLOT", "shortcut": "CTRL+P", "description": "Print or plot drawing.", "tasks": ["print drawing", "plot layout"]},
-  {"product": "AutoCAD 2026", "kind": "command", "name": "EXPORTPDF", "shortcut": "PDF", "description": "Export drawing to PDF.", "tasks": ["create pdf", "export plan sheet"]},
-  {"product": "AutoCAD 2026", "kind": "shortcut", "name": "CTRL+1", "shortcut": "CTRL+1", "description": "Open Properties palette.", "tasks": ["open properties quickly", "inspect selected object"]},
-  {"product": "AutoCAD 2026", "kind": "shortcut", "name": "CTRL+2", "shortcut": "CTRL+2", "description": "Open DesignCenter palette.", "tasks": ["reuse content", "browse external drawing content"]},
-  {"product": "AutoCAD 2026", "kind": "shortcut", "name": "CTRL+3", "shortcut": "CTRL+3", "description": "Open Tool Palettes window.", "tasks": ["open tool palettes", "access custom tools"]},
-  {"product": "AutoCAD 2026", "kind": "shortcut", "name": "CTRL+9", "shortcut": "CTRL+9", "description": "Toggle command line visibility.", "tasks": ["show command line", "hide command line"]},
-  {"product": "AutoCAD 2026", "kind": "shortcut", "name": "F3", "shortcut": "F3", "description": "Toggle Object Snap.", "tasks": ["turn on osnap", "precision snapping"]},
-  {"product": "AutoCAD 2026", "kind": "shortcut", "name": "F8", "shortcut": "F8", "description": "Toggle Ortho mode.", "tasks": ["lock to horizontal and vertical", "draw orthogonal"]},
-  {"product": "AutoCAD 2026", "kind": "shortcut", "name": "CTRL+S", "shortcut": "CTRL+S", "description": "Save current drawing.", "tasks": ["save drawing quickly", "quick save"]},
-  {"product": "AutoCAD 2026", "kind": "shortcut", "name": "CTRL+Z", "shortcut": "CTRL+Z", "description": "Undo action.", "tasks": ["undo keyboard", "revert with keyboard"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "SURFACECREATE", "shortcut": "N/A", "description": "Create a new Civil 3D surface.", "tasks": ["create a surface", "start terrain model"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "EDITSURFACE", "shortcut": "N/A", "description": "Edit existing surface data.", "tasks": ["edit a surface", "refine terrain model"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "ALIGNMENTCREATE", "shortcut": "N/A", "description": "Create an alignment from layout/tools.", "tasks": ["create alignment", "define road centerline"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "PROFILECREATE", "shortcut": "N/A", "description": "Create design profile geometry.", "tasks": ["create profile", "design vertical alignment"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "PROFILEVIEWCREATE", "shortcut": "N/A", "description": "Create profile view drawing.", "tasks": ["create profile view", "show profile on sheet"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "CORRIDORCREATE", "shortcut": "N/A", "description": "Build a corridor model from alignment/profile/assembly.", "tasks": ["create corridor", "build corridor model"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "CORRIDORPROPERTIES", "shortcut": "N/A", "description": "Edit corridor settings and regions.", "tasks": ["edit corridor", "modify corridor regions"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "ASSEMBLYCREATE", "shortcut": "N/A", "description": "Create assemblies used by corridor models.", "tasks": ["create assembly", "build typical section"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "SAMPLELINECREATE", "shortcut": "N/A", "description": "Create sample lines along alignments.", "tasks": ["create sample lines", "prepare cross sections"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "SECTIONVIEWCREATE", "shortcut": "N/A", "description": "Create section views.", "tasks": ["create section view", "plot cross section"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "GRADINGCREATE", "shortcut": "N/A", "description": "Create grading objects.", "tasks": ["create grading", "grade to target"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "FEATURELINECREATE", "shortcut": "N/A", "description": "Create feature lines.", "tasks": ["create feature line", "define breakline geometry"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "PARCELCREATE", "shortcut": "N/A", "description": "Create parcels from objects.", "tasks": ["create parcel", "subdivide lots"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "POINTCREATE", "shortcut": "N/A", "description": "Create COGO points.", "tasks": ["create cogo points", "insert survey points"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "POINTGROUP", "shortcut": "N/A", "description": "Create and edit point groups.", "tasks": ["organize points", "filter cogo points"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "PIPECREATE", "shortcut": "N/A", "description": "Create gravity pipe networks.", "tasks": ["create pipe network", "design storm sewer"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "PRESSURENETWORKCREATE", "shortcut": "N/A", "description": "Create pressure pipe networks.", "tasks": ["create pressure network", "design water distribution"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "NETWORKLAYOUTTOOLS", "shortcut": "N/A", "description": "Open network layout tools.", "tasks": ["layout pipes", "edit network layout"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "LABELSTYLECOMPOSER", "shortcut": "N/A", "description": "Edit Civil label style components.", "tasks": ["customize labels", "edit label style"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "ADDLABELS", "shortcut": "N/A", "description": "Add labels to Civil objects.", "tasks": ["label alignment", "label surface contours"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "CREATESURFACEFROMPOINTCLOUD", "shortcut": "N/A", "description": "Generate surface from point cloud sources.", "tasks": ["surface from point cloud", "process lidar"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "VOLUMEDASHBOARD", "shortcut": "N/A", "description": "Compute and review earthwork volumes.", "tasks": ["calculate cut fill", "compare surfaces"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "QUICKPROFILE", "shortcut": "N/A", "description": "Create quick profile from existing objects.", "tasks": ["quick profile check", "inspect elevations"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "MAPCHECK", "shortcut": "N/A", "description": "Analyze parcel traverse closure.", "tasks": ["check parcel closure", "verify legal description"]},
-  {"product": "Civil 3D 2026", "kind": "command", "name": "OBJECTVIEWER", "shortcut": "N/A", "description": "View Civil object model details.", "tasks": ["inspect corridor model", "review object geometry"]},
-  {"product": "Civil 3D 2026", "kind": "shortcut", "name": "Prospector Tab", "shortcut": "TOOLSPACE", "description": "Access Prospector in Toolspace.", "tasks": ["manage civil objects", "browse surfaces and points"]},
-  {"product": "Civil 3D 2026", "kind": "shortcut", "name": "Settings Tab", "shortcut": "TOOLSPACE", "description": "Access drawing/feature settings.", "tasks": ["edit civil styles", "change command defaults"]},
-  {"product": "Civil 3D 2026", "kind": "shortcut", "name": "Survey Tab", "shortcut": "TOOLSPACE", "description": "Access survey databases and figures.", "tasks": ["manage survey data", "import fieldbook"]},
-  {"product": "Civil 3D 2026", "kind": "shortcut", "name": "Analyze Tab", "shortcut": "TOOLSPACE", "description": "Access analysis tools.", "tasks": ["run analysis", "inspect design criteria checks"]}
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "ADCENTER",
+    "shortcuts": [
+      "ADC"
+    ],
+    "shortcut": "ADC",
+    "description": "Manages/inserts content such as blocks, xrefs, and hatch patterns.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Add Hyperlink",
+    "shortcuts": [
+      "Ctrl+K"
+    ],
+    "shortcut": "Ctrl+K",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "ALIGN",
+    "shortcuts": [
+      "AL"
+    ],
+    "shortcut": "AL",
+    "description": "Aligns objects with other objects in 2D/3D.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "APPLOAD",
+    "shortcuts": [
+      "AP"
+    ],
+    "shortcut": "AP",
+    "description": "Loads applications.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "ARC",
+    "shortcut": "A",
+    "description": "Create arc geometry. | Creates an arc.",
+    "tasks": [
+      "draw an arc",
+      "add curved segment"
+    ],
+    "shortcuts": [
+      "A"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "AREA",
+    "shortcuts": [
+      "AA"
+    ],
+    "shortcut": "AA",
+    "description": "Calculates area and perimeter.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "ARRAY",
+    "shortcut": "AR",
+    "description": "Create rectangular/polar/path arrays. | Creates multiple copies in a pattern.",
+    "tasks": [
+      "repeat object pattern",
+      "array objects"
+    ],
+    "shortcuts": [
+      "AR"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "ATTDEF",
+    "shortcuts": [
+      "ATT"
+    ],
+    "shortcut": "ATT",
+    "description": "Creates an attribute definition.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "AUDIT",
+    "shortcut": "AUDIT",
+    "description": "Check and repair drawing errors.",
+    "tasks": [
+      "fix drawing errors",
+      "audit file"
+    ],
+    "shortcuts": [
+      "AUDIT"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "BLOCK",
+    "shortcut": "B",
+    "description": "Define a block. | Creates a block definition.",
+    "tasks": [
+      "create reusable block",
+      "make symbol block"
+    ],
+    "shortcuts": [
+      "B"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Cancel Current Command",
+    "shortcuts": [
+      "Esc",
+      "Ctrl+[",
+      "Ctrl+\\"
+    ],
+    "shortcut": "Esc",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "CHAMFER",
+    "shortcut": "CHA",
+    "description": "Bevel corners.",
+    "tasks": [
+      "bevel corner",
+      "cut corner at distance"
+    ],
+    "shortcuts": [
+      "CHA"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "CIRCLE",
+    "shortcut": "C",
+    "description": "Create circles by center/radius options. | Creates a circle.",
+    "tasks": [
+      "draw a circle",
+      "add round geometry"
+    ],
+    "shortcuts": [
+      "C"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Command Line",
+    "shortcuts": [
+      "Ctrl+9"
+    ],
+    "shortcut": "Ctrl+9",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "COPY",
+    "shortcut": "CO",
+    "description": "Copy selected objects. | Copies objects.",
+    "tasks": [
+      "duplicate geometry",
+      "copy elements"
+    ],
+    "shortcuts": [
+      "CO",
+      "CP"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Copy Selected Objects",
+    "shortcuts": [
+      "Ctrl+C"
+    ],
+    "shortcut": "Ctrl+C",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Copy with Base Point",
+    "shortcuts": [
+      "Ctrl+Shift+C"
+    ],
+    "shortcut": "Ctrl+Shift+C",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "CTRL+1",
+    "shortcut": "Ctrl+1",
+    "description": "Open Properties palette.",
+    "tasks": [
+      "open properties quickly",
+      "inspect selected object"
+    ],
+    "shortcuts": [
+      "Ctrl+1"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "CTRL+2",
+    "shortcut": "Ctrl+2",
+    "description": "Open DesignCenter palette.",
+    "tasks": [
+      "reuse content",
+      "browse external drawing content"
+    ],
+    "shortcuts": [
+      "Ctrl+2"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "CTRL+3",
+    "shortcut": "Ctrl+3",
+    "description": "Open Tool Palettes window.",
+    "tasks": [
+      "open tool palettes",
+      "access custom tools"
+    ],
+    "shortcuts": [
+      "Ctrl+3"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "CTRL+9",
+    "shortcut": "Ctrl+9",
+    "description": "Toggle command line visibility.",
+    "tasks": [
+      "show command line",
+      "hide command line"
+    ],
+    "shortcuts": [
+      "Ctrl+9"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "CTRL+S",
+    "shortcut": "Ctrl+S",
+    "description": "Save current drawing.",
+    "tasks": [
+      "save drawing quickly",
+      "quick save"
+    ],
+    "shortcuts": [
+      "Ctrl+S"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "CTRL+Z",
+    "shortcut": "Ctrl+Z",
+    "description": "Undo action.",
+    "tasks": [
+      "undo keyboard",
+      "revert with keyboard"
+    ],
+    "shortcuts": [
+      "Ctrl+Z"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Cut Selected Objects",
+    "shortcuts": [
+      "Ctrl+X"
+    ],
+    "shortcut": "Ctrl+X",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Cut with Base Point",
+    "shortcuts": [
+      "Ctrl+Shift+X"
+    ],
+    "shortcut": "Ctrl+Shift+X",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Cycle Isoplane",
+    "shortcuts": [
+      "F5",
+      "Ctrl+E"
+    ],
+    "shortcut": "F5",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "DesignCenter Palette",
+    "shortcuts": [
+      "Ctrl+2"
+    ],
+    "shortcut": "Ctrl+2",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "DIM",
+    "shortcut": "D",
+    "description": "Create and edit dimensions.",
+    "tasks": [
+      "add dimensions",
+      "dimension drawing"
+    ],
+    "shortcuts": [
+      "D"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "DIMSTYLE",
+    "shortcuts": [
+      "D"
+    ],
+    "shortcut": "D",
+    "description": "Creates/modifies dimension styles.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "ERASE",
+    "shortcuts": [
+      "E"
+    ],
+    "shortcut": "E",
+    "description": "Removes objects.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "EXIT",
+    "shortcuts": [
+      "EXIT",
+      "QUIT"
+    ],
+    "shortcut": "EXIT",
+    "description": "Exits AutoCAD.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Exit AutoCAD",
+    "shortcuts": [
+      "Ctrl+Q"
+    ],
+    "shortcut": "Ctrl+Q",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "EXPLODE",
+    "shortcuts": [
+      "X"
+    ],
+    "shortcut": "X",
+    "description": "Breaks compound objects into components.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "EXPORTPDF",
+    "shortcut": "PDF",
+    "description": "Export drawing to PDF.",
+    "tasks": [
+      "create pdf",
+      "export plan sheet"
+    ],
+    "shortcuts": [
+      "PDF"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "EXTEND",
+    "shortcut": "EX",
+    "description": "Extend objects to boundaries.",
+    "tasks": [
+      "extend a line",
+      "close gaps"
+    ],
+    "shortcuts": [
+      "EX"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "F3",
+    "shortcut": "F3",
+    "description": "Toggle Object Snap.",
+    "tasks": [
+      "turn on osnap",
+      "precision snapping"
+    ],
+    "shortcuts": [
+      "F3"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "F8",
+    "shortcut": "F8",
+    "description": "Toggle Ortho mode.",
+    "tasks": [
+      "lock to horizontal and vertical",
+      "draw orthogonal"
+    ],
+    "shortcuts": [
+      "F8"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "FILLET",
+    "shortcut": "F",
+    "description": "Round corners between objects. | Rounds/fillets edges.",
+    "tasks": [
+      "round corner",
+      "create tangent arc"
+    ],
+    "shortcuts": [
+      "F"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "GROUP",
+    "shortcuts": [
+      "G"
+    ],
+    "shortcut": "G",
+    "description": "Creates/manages object groups.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "HATCH",
+    "shortcut": "H",
+    "description": "Fill enclosed areas with hatch/solid. | Fills enclosed areas with hatch/fill.",
+    "tasks": [
+      "hatch area",
+      "fill closed boundary"
+    ],
+    "shortcuts": [
+      "H"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Help",
+    "shortcuts": [
+      "F1"
+    ],
+    "shortcut": "F1",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "INSERT",
+    "shortcut": "I",
+    "description": "Insert a block reference. | Inserts a block or drawing.",
+    "tasks": [
+      "insert block",
+      "place symbol"
+    ],
+    "shortcuts": [
+      "I"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "JOIN",
+    "shortcuts": [
+      "J"
+    ],
+    "shortcut": "J",
+    "description": "Joins similar objects.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "LAYER",
+    "shortcut": "LA",
+    "description": "Layer Properties Manager. | Opens Layer Properties Manager.",
+    "tasks": [
+      "manage layers",
+      "change layer settings"
+    ],
+    "shortcuts": [
+      "LA"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "LEADER",
+    "shortcuts": [
+      "LE"
+    ],
+    "shortcut": "LE",
+    "description": "Creates leader annotation.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "LINE",
+    "shortcut": "L",
+    "description": "Create straight line segments. | Creates straight line segments.",
+    "tasks": [
+      "draw a line",
+      "start drafting geometry"
+    ],
+    "shortcuts": [
+      "L"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Markup Set Manager Palette",
+    "shortcuts": [
+      "Ctrl+7"
+    ],
+    "shortcut": "Ctrl+7",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "MATCHPROP",
+    "shortcut": "MA",
+    "description": "Copy object properties. | Matches properties between objects.",
+    "tasks": [
+      "match properties",
+      "copy style"
+    ],
+    "shortcuts": [
+      "MA"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "MIRROR",
+    "shortcut": "MI",
+    "description": "Mirror objects across an axis.",
+    "tasks": [
+      "mirror geometry",
+      "symmetrical copy"
+    ],
+    "shortcuts": [
+      "MI"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "MOVE",
+    "shortcut": "M",
+    "description": "Move selected objects. | Moves objects.",
+    "tasks": [
+      "move an object",
+      "relocate geometry"
+    ],
+    "shortcuts": [
+      "M"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "MTEXT",
+    "shortcut": "MT",
+    "description": "Create multiline text. | Creates multiline text.",
+    "tasks": [
+      "add note",
+      "insert text annotation"
+    ],
+    "shortcuts": [
+      "MT",
+      "T"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "New Drawing",
+    "shortcuts": [
+      "Ctrl+N"
+    ],
+    "shortcut": "Ctrl+N",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Next Drawing",
+    "shortcuts": [
+      "Ctrl+Tab"
+    ],
+    "shortcut": "Ctrl+Tab",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Next Tab in Current Drawing",
+    "shortcuts": [
+      "Ctrl+Page Down"
+    ],
+    "shortcut": "Ctrl+Page Down",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "OFFSET",
+    "shortcut": "O",
+    "description": "Create parallel/concentric copies. | Creates parallel/concentric geometry.",
+    "tasks": [
+      "offset a line",
+      "create parallel boundary"
+    ],
+    "shortcuts": [
+      "O"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Open Drawing",
+    "shortcuts": [
+      "Ctrl+O"
+    ],
+    "shortcut": "Ctrl+O",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "PAN",
+    "shortcut": "P",
+    "description": "Pan viewport. | Moves view without changing magnification.",
+    "tasks": [
+      "move view",
+      "pan drawing"
+    ],
+    "shortcuts": [
+      "P"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Paste",
+    "shortcuts": [
+      "Ctrl+V"
+    ],
+    "shortcut": "Ctrl+V",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Paste as Block",
+    "shortcuts": [
+      "Ctrl+Shift+V"
+    ],
+    "shortcut": "Ctrl+Shift+V",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "PLINE",
+    "shortcut": "PL",
+    "description": "Create connected polyline segments. | Creates a 2D polyline.",
+    "tasks": [
+      "draw connected lines",
+      "create boundary polyline"
+    ],
+    "shortcuts": [
+      "PL"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "PLOT",
+    "shortcut": "Ctrl+P",
+    "description": "Print or plot drawing.",
+    "tasks": [
+      "print drawing",
+      "plot layout"
+    ],
+    "shortcuts": [
+      "Ctrl+P"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Previous Drawing",
+    "shortcuts": [
+      "Ctrl+Shift+Tab"
+    ],
+    "shortcut": "Ctrl+Shift+Tab",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Previous Tab in Current Drawing",
+    "shortcuts": [
+      "Ctrl+Page Up"
+    ],
+    "shortcut": "Ctrl+Page Up",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "PROPERTIES",
+    "shortcut": "PR",
+    "description": "Open Properties palette. | Opens Properties palette.",
+    "tasks": [
+      "edit object properties",
+      "inspect object settings"
+    ],
+    "shortcuts": [
+      "PR",
+      "CH"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Properties Palette",
+    "shortcuts": [
+      "Ctrl+1"
+    ],
+    "shortcut": "Ctrl+1",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "PURGE",
+    "shortcut": "PU",
+    "description": "Remove unused named objects.",
+    "tasks": [
+      "clean drawing",
+      "remove unused blocks and layers"
+    ],
+    "shortcuts": [
+      "PU"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "QSAVE",
+    "shortcuts": [
+      "QSAVE"
+    ],
+    "shortcut": "QSAVE",
+    "description": "Quick Save.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "QuickCalc Palette",
+    "shortcuts": [
+      "Ctrl+8"
+    ],
+    "shortcut": "Ctrl+8",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "RECTANG",
+    "shortcut": "REC",
+    "description": "Create rectangles.",
+    "tasks": [
+      "draw a rectangle",
+      "make a box outline"
+    ],
+    "shortcuts": [
+      "REC"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "RECTANGLE",
+    "shortcuts": [
+      "REC"
+    ],
+    "shortcut": "REC",
+    "description": "Creates a rectangle.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "REDO",
+    "shortcut": "REDO",
+    "description": "Redo undone action.",
+    "tasks": [
+      "redo change",
+      "restore step"
+    ],
+    "shortcuts": [
+      "REDO",
+      "Ctrl+Y"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "REDRAW",
+    "shortcuts": [
+      "R"
+    ],
+    "shortcut": "R",
+    "description": "Refreshes viewport display.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Repeat Previous Command",
+    "shortcuts": [
+      "Ctrl+J",
+      "Ctrl+M"
+    ],
+    "shortcut": "Ctrl+J",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "ROTATE",
+    "shortcut": "RO",
+    "description": "Rotate selected objects.",
+    "tasks": [
+      "rotate object",
+      "turn block"
+    ],
+    "shortcuts": [
+      "RO"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Save Drawing",
+    "shortcuts": [
+      "Ctrl+S"
+    ],
+    "shortcut": "Ctrl+S",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Save Drawing As",
+    "shortcuts": [
+      "Ctrl+Shift+S"
+    ],
+    "shortcut": "Ctrl+Shift+S",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "SCALE",
+    "shortcut": "SC",
+    "description": "Scale objects.",
+    "tasks": [
+      "resize geometry",
+      "scale block"
+    ],
+    "shortcuts": [
+      "SC"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Select All",
+    "shortcuts": [
+      "Ctrl+A"
+    ],
+    "shortcut": "Ctrl+A",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Select Objects",
+    "shortcuts": [
+      "Ctrl+Shift+L"
+    ],
+    "shortcut": "Ctrl+Shift+L",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Sheet Set Palette",
+    "shortcuts": [
+      "Ctrl+4"
+    ],
+    "shortcut": "Ctrl+4",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "STRETCH",
+    "shortcuts": [
+      "S"
+    ],
+    "shortcut": "S",
+    "description": "Stretches objects by crossing selection.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "TEXT",
+    "shortcuts": [
+      "DT"
+    ],
+    "shortcut": "DT",
+    "description": "Creates single-line text.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle 3D Object Snap",
+    "shortcuts": [
+      "F4",
+      "Ctrl+Shift+Y"
+    ],
+    "shortcut": "F4",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Coords",
+    "shortcuts": [
+      "Ctrl+I"
+    ],
+    "shortcut": "Ctrl+I",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Dynamic Input",
+    "shortcuts": [
+      "F12"
+    ],
+    "shortcut": "F12",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Dynamic UCS",
+    "shortcuts": [
+      "F6",
+      "Ctrl+D"
+    ],
+    "shortcut": "F6",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Floating Viewports",
+    "shortcuts": [
+      "Ctrl+R"
+    ],
+    "shortcut": "Ctrl+R",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Full Screen",
+    "shortcuts": [
+      "Ctrl+0"
+    ],
+    "shortcut": "Ctrl+0",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Grid",
+    "shortcuts": [
+      "F7"
+    ],
+    "shortcut": "F7",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Group Selection",
+    "shortcuts": [
+      "Ctrl+Shift+A"
+    ],
+    "shortcut": "Ctrl+Shift+A",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Infer Constraints",
+    "shortcuts": [
+      "Ctrl+Shift+I"
+    ],
+    "shortcut": "Ctrl+Shift+I",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Object Snap",
+    "shortcuts": [
+      "F3"
+    ],
+    "shortcut": "F3",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Object Snap Tracking",
+    "shortcuts": [
+      "F11"
+    ],
+    "shortcut": "F11",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Ortho Mode",
+    "shortcuts": [
+      "F8",
+      "Ctrl+L"
+    ],
+    "shortcut": "F8",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Palettes",
+    "shortcuts": [
+      "Ctrl+Shift+H"
+    ],
+    "shortcut": "Ctrl+Shift+H",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Pick Style",
+    "shortcuts": [
+      "Ctrl+H"
+    ],
+    "shortcut": "Ctrl+H",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Polar Tracking",
+    "shortcuts": [
+      "F10"
+    ],
+    "shortcut": "F10",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Quick Properties",
+    "shortcuts": [
+      "Ctrl+Shift+P"
+    ],
+    "shortcut": "Ctrl+Shift+P",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Selection Cycling",
+    "shortcuts": [
+      "Ctrl+W",
+      "Ctrl+Shift+W"
+    ],
+    "shortcut": "Ctrl+W",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Snap Mode",
+    "shortcuts": [
+      "F9",
+      "Ctrl+B"
+    ],
+    "shortcut": "F9",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Toggle Text Screen",
+    "shortcuts": [
+      "F2"
+    ],
+    "shortcut": "F2",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "shortcut",
+    "name": "Tool Sets Palette",
+    "shortcuts": [
+      "Ctrl+3"
+    ],
+    "shortcut": "Ctrl+3",
+    "description": "",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "TRIM",
+    "shortcut": "TR",
+    "description": "Trim objects to edges.",
+    "tasks": [
+      "trim excess lines",
+      "clean intersections"
+    ],
+    "shortcuts": [
+      "TR"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "UNDO",
+    "shortcut": "U",
+    "description": "Undo previous action.",
+    "tasks": [
+      "undo change",
+      "revert last step"
+    ],
+    "shortcuts": [
+      "U",
+      "Ctrl+Z"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "VIEW",
+    "shortcuts": [
+      "V"
+    ],
+    "shortcut": "V",
+    "description": "Saves/restores named views.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "WBLOCK",
+    "shortcuts": [
+      "W"
+    ],
+    "shortcut": "W",
+    "description": "Writes objects/block to a new drawing file.",
+    "tasks": [],
+    "source": "autodesk-shortcut-guide-2024",
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "XREF",
+    "shortcut": "XR",
+    "description": "Attach and manage external references.",
+    "tasks": [
+      "attach xref",
+      "reference another drawing"
+    ],
+    "shortcuts": [
+      "XR"
+    ]
+  },
+  {
+    "product": "AutoCAD",
+    "kind": "command",
+    "name": "ZOOM",
+    "shortcut": "Z",
+    "description": "Change view magnification. | Changes magnification.",
+    "tasks": [
+      "zoom extents",
+      "zoom to objects"
+    ],
+    "shortcuts": [
+      "Z"
+    ],
+    "sources": [
+      "autodesk-shortcut-guide-2024"
+    ],
+    "source": "autodesk-shortcut-guide-2024"
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "ADDLABELS",
+    "shortcut": "N/A",
+    "description": "Add labels to Civil objects.",
+    "tasks": [
+      "label alignment",
+      "label surface contours"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "ALIGNMENTCREATE",
+    "shortcut": "N/A",
+    "description": "Create an alignment from layout/tools.",
+    "tasks": [
+      "create alignment",
+      "define road centerline"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "shortcut",
+    "name": "Analyze Tab",
+    "shortcut": "TOOLSPACE",
+    "description": "Access analysis tools.",
+    "tasks": [
+      "run analysis",
+      "inspect design criteria checks"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "ASSEMBLYCREATE",
+    "shortcut": "N/A",
+    "description": "Create assemblies used by corridor models.",
+    "tasks": [
+      "create assembly",
+      "build typical section"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "CORRIDORCREATE",
+    "shortcut": "N/A",
+    "description": "Build a corridor model from alignment/profile/assembly.",
+    "tasks": [
+      "create corridor",
+      "build corridor model"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "CORRIDORPROPERTIES",
+    "shortcut": "N/A",
+    "description": "Edit corridor settings and regions.",
+    "tasks": [
+      "edit corridor",
+      "modify corridor regions"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "CREATESURFACEFROMPOINTCLOUD",
+    "shortcut": "N/A",
+    "description": "Generate surface from point cloud sources.",
+    "tasks": [
+      "surface from point cloud",
+      "process lidar"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "EDITSURFACE",
+    "shortcut": "N/A",
+    "description": "Edit existing surface data.",
+    "tasks": [
+      "edit a surface",
+      "refine terrain model"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "FEATURELINECREATE",
+    "shortcut": "N/A",
+    "description": "Create feature lines.",
+    "tasks": [
+      "create feature line",
+      "define breakline geometry"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "GRADINGCREATE",
+    "shortcut": "N/A",
+    "description": "Create grading objects.",
+    "tasks": [
+      "create grading",
+      "grade to target"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "LABELSTYLECOMPOSER",
+    "shortcut": "N/A",
+    "description": "Edit Civil label style components.",
+    "tasks": [
+      "customize labels",
+      "edit label style"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "MAPCHECK",
+    "shortcut": "N/A",
+    "description": "Analyze parcel traverse closure.",
+    "tasks": [
+      "check parcel closure",
+      "verify legal description"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "NETWORKLAYOUTTOOLS",
+    "shortcut": "N/A",
+    "description": "Open network layout tools.",
+    "tasks": [
+      "layout pipes",
+      "edit network layout"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "OBJECTVIEWER",
+    "shortcut": "N/A",
+    "description": "View Civil object model details.",
+    "tasks": [
+      "inspect corridor model",
+      "review object geometry"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "PARCELCREATE",
+    "shortcut": "N/A",
+    "description": "Create parcels from objects.",
+    "tasks": [
+      "create parcel",
+      "subdivide lots"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "PIPECREATE",
+    "shortcut": "N/A",
+    "description": "Create gravity pipe networks.",
+    "tasks": [
+      "create pipe network",
+      "design storm sewer"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "POINTCREATE",
+    "shortcut": "N/A",
+    "description": "Create COGO points.",
+    "tasks": [
+      "create cogo points",
+      "insert survey points"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "POINTGROUP",
+    "shortcut": "N/A",
+    "description": "Create and edit point groups.",
+    "tasks": [
+      "organize points",
+      "filter cogo points"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "PRESSURENETWORKCREATE",
+    "shortcut": "N/A",
+    "description": "Create pressure pipe networks.",
+    "tasks": [
+      "create pressure network",
+      "design water distribution"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "PROFILECREATE",
+    "shortcut": "N/A",
+    "description": "Create design profile geometry.",
+    "tasks": [
+      "create profile",
+      "design vertical alignment"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "PROFILEVIEWCREATE",
+    "shortcut": "N/A",
+    "description": "Create profile view drawing.",
+    "tasks": [
+      "create profile view",
+      "show profile on sheet"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "shortcut",
+    "name": "Prospector Tab",
+    "shortcut": "TOOLSPACE",
+    "description": "Access Prospector in Toolspace.",
+    "tasks": [
+      "manage civil objects",
+      "browse surfaces and points"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "QUICKPROFILE",
+    "shortcut": "N/A",
+    "description": "Create quick profile from existing objects.",
+    "tasks": [
+      "quick profile check",
+      "inspect elevations"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "SAMPLELINECREATE",
+    "shortcut": "N/A",
+    "description": "Create sample lines along alignments.",
+    "tasks": [
+      "create sample lines",
+      "prepare cross sections"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "SECTIONVIEWCREATE",
+    "shortcut": "N/A",
+    "description": "Create section views.",
+    "tasks": [
+      "create section view",
+      "plot cross section"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "shortcut",
+    "name": "Settings Tab",
+    "shortcut": "TOOLSPACE",
+    "description": "Access drawing/feature settings.",
+    "tasks": [
+      "edit civil styles",
+      "change command defaults"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "SURFACECREATE",
+    "shortcut": "N/A",
+    "description": "Create a new Civil 3D surface.",
+    "tasks": [
+      "create a surface",
+      "start terrain model"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "shortcut",
+    "name": "Survey Tab",
+    "shortcut": "TOOLSPACE",
+    "description": "Access survey databases and figures.",
+    "tasks": [
+      "manage survey data",
+      "import fieldbook"
+    ]
+  },
+  {
+    "product": "Civil 3D 2026",
+    "kind": "command",
+    "name": "VOLUMEDASHBOARD",
+    "shortcut": "N/A",
+    "description": "Compute and review earthwork volumes.",
+    "tasks": [
+      "calculate cut fill",
+      "compare surfaces"
+    ]
+  }
 ]
