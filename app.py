@@ -3,6 +3,7 @@ import re
 import csv
 import html as html_lib
 from pathlib import Path
+import time
 import streamlit as st
 import streamlit.components.v1 as components
 from urllib.parse import quote_plus
@@ -25,6 +26,7 @@ else:
 def normalize(text):
     return re.sub(r"[^a-z0-9+ ]+", " ", (text or "").lower()).strip()
 
+
 def get_shortcuts(item):
     shortcuts = []
     for s in item.get("shortcuts", []) if isinstance(item.get("shortcuts"), list) else []:
@@ -43,6 +45,7 @@ def get_shortcuts(item):
         unique.append(s)
     return unique
 
+
 def export_item(item):
     out = dict(item)
     shortcuts = get_shortcuts(item)
@@ -50,6 +53,7 @@ def export_item(item):
         out["shortcuts"] = shortcuts
         out["shortcut"] = shortcuts[0]
     return out
+
 
 # Scoring/search function
 def score_commands(commands, query, product_filter, kind_filter):
@@ -73,24 +77,35 @@ def score_commands(commands, query, product_filter, kind_filter):
             matches.append({"score": score, "item": item})
     return matches
 
+
 # UI
 st.title("Civil 3D + AutoCAD Command Search")
 st.write("Ask for a task and find the matching command or shortcut.")
 
-# Controls
-col1, col2, col3, col4 = st.columns([4, 1, 1, 1])
-with col1:
-    query = st.text_input("Search", placeholder="Example: How do I create a corridor and label sections?")
-with col2:
-    products = ["all"] + sorted({c.get("product") for c in commands if c.get("product")})
-    product = st.selectbox("Product", products, index=0)
-with col3:
-    kinds = ["all"] + sorted({c.get("kind") for c in commands if c.get("kind")})
-    kind = st.selectbox("Kind", kinds, index=0)
-with col4:
-    sort_option = st.selectbox("Sort by", ["Relevance", "Name (A-Z)", "Product (A-Z)"])
+# Controls inside a form so searches are explicit (and we can show a loading state on submit)
+with st.form(key="search_form"):
+    col1, col2, col3, col4 = st.columns([4, 1, 1, 1])
+    with col1:
+        query = st.text_input("Search", placeholder="Example: How do I create a corridor and label sections?")
+    with col2:
+        products = ["all"] + sorted({c.get("product") for c in commands if c.get("product")})
+        product = st.selectbox("Product", products, index=0)
+    with col3:
+        kinds = ["all"] + sorted({c.get("kind") for c in commands if c.get("kind")})
+        kind = st.selectbox("Kind", kinds, index=0)
+    with col4:
+        sort_option = st.selectbox("Sort by", ["Relevance", "Name (A-Z)", "Product (A-Z)"])
+        submit = st.form_submit_button("Search")
 
-matches = score_commands(commands, query, product, kind)
+# Run an initial search immediately so users see results on first load.
+matches = score_commands(commands, query if 'query' in locals() else "", product if 'product' in locals() else "all", kind if 'kind' in locals() else "all")
+
+# If the form was submitted, show a loading spinner while re-running the search to improve UX
+if 'submit' in locals() and submit:
+    with st.spinner("Searching, building results and shortcuts — this may take a moment..."):
+        # small pause so users see feedback even for very fast searches
+        time.sleep(0.35)
+        matches = score_commands(commands, query, product, kind)
 
 # Apply sorting
 if sort_option == "Relevance":
